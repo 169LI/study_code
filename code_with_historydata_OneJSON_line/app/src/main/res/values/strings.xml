@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">室内空气质量检测</string>
+    <string name="湿度">历史信息查询</string>
+    <string name="温度">历史信息查询</string>
+    <string name="pm">历史PM2.5浓度信息查询</string>
+</resources>
+

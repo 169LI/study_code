@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PmActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="#b8c6d1"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/data_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#222222"
+            android:textSize="28sp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="历史数据信息查询"
+            android:textColor="#222222"
+            android:textSize="28sp">
+        </TextView>
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询日期："
+            android:textColor="#222222"
+            android:textSize="28sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/start_date_S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024年 03月 07日"
+            android:textColor="#053B6D"
+            android:textSize="28sp">
+        </TextView>
+        />
+
+    </LinearLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="400dp"-->
+    <!--        android:layout_marginTop="80dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:padding="5dp"-->
+    <!--        >-->
+    <!--        <ListView-->
+    <!--            android:id="@+id/listView1"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"></ListView>-->
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <com.jiafei.test.RunTimeCurvesView
+            android:id="@+id/mRTCurve"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="320dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="返回"
+            android:textSize="30sp"
+            android:background="@drawable/btn_1"></Button>
+    </LinearLayout>
+</RelativeLayout>
