@@ -1,0 +1,2 @@
+include ':app', ':http_get'
+rootProject.name='My Application'

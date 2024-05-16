@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/sharpTurn_L"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="235dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#26C5D9"
+        android:text="左掉头" />
+
+    <Button
+        android:id="@+id/sharpTurn_R"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#26C5D9"
+        android:text="右掉头" />
+
+    <SeekBar
+        android:id="@+id/speed"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="515dp"
+        android:layout_marginBottom="15dp"
+        android:max="6"
+            android:min="0"
+        android:progress="3"
+        android:thumb="@drawable/speed" />
+
+    <SeekBar
+        android:id="@+id/orientation"
+        android:layout_width="376dp"
+        android:layout_height="111dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="61dp"
+        android:max="100"
+        android:min="0"
+        android:progress="50"
+        android:progressBackgroundTint="#001AFF"
+        android:progressTint="#421212" />
+
+    <ImageView
+        android:id="@+id/motor_upIV"
+        android:layout_width="121dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="639dp"
+        android:layout_marginBottom="204dp"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+
+        android:id="@+id/motor_downIV"
+        android:layout_width="121dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="638dp"
+        android:layout_marginBottom="82dp"
+        android:rotation="180"
+        android:src="@drawable/arrow" />
+
+
+
+
+</RelativeLayout>
